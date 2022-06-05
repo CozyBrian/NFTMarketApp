@@ -1,10 +1,8 @@
-import { Text, View } from 'react-native';
+import AppNavigation from "./src/navigation/app.navigation";
 
 export default function App() {
   return (
-    <View >
-      <Text>Open Still Works abi</Text>
-    </View>
+    <AppNavigation/>
   );
 }
 
