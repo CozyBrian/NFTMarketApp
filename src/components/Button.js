@@ -25,7 +25,7 @@ export const CircleButton = ({ imgUrl, handlePress, ...props }) => {
     </TouchableOpacity>
   )
 }
-export const Button = ({minWidth,fontSize, ...props}) => {
+export const Button = ({minWidth,fontSize,handlePress, ...props}) => {
   return (
     <TouchableOpacity style={{
       backgroundColor: COLORS.primary,
@@ -33,7 +33,8 @@ export const Button = ({minWidth,fontSize, ...props}) => {
       minWidth: minWidth,
       padding: SIZES.small,
       ...props
-    }}>
+    }}
+    onPress={handlePress}>
       <Text style={{
         fontFamily: FONTS.semiBold,
         fontSize: fontSize,
